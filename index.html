@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body class="font-sans text-gray-900 bg-orange-200">
+
+    <!-- HEADER -->
+    <header class="fixed w-full bg-white shadow z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-xl  text-orange-200 loho"><img src="./image-removebg-preview.png" alt=""></div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-orange-200">Home</a>
+                <a href="#" class="hover:text-orange-200">Tours</a>
+                <a href="#" class="hover:text-orange-200">About</a>
+                <a href="#" class="hover:text-orange-200">Contact</a>
+                <select name="" id=""><img src="https://cdn-icons-png.flaticon.com/512/6522/6522516.png" alt="">
+                    <option value="">⚙️ Setting</option>
+                    <option value=""><img class="h-1 w-1" src="https://www.iconpacks.net/icons/2/free-exit-icon-2860-thumb.png" alt="">Layout</option>
+                    <option value=""></option>
+                </select>
+            </nav>
+            <button class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="h-screen bg-cover bg-center flex items-center justify-center relative"
+        style="background-image: url('https://media.audleytravel.com/-/media/images/home/inspiration/short-breaks/gettyimages-929948438_high_res_3000x1000.jpg?q=79&w=1920&h=685');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="text-center text-white relative z-10 px-4">
+            <h1 class="text-4xl md:text-6xl font-serif font-bold mb-6">Bespoke Luxury Greece Vacation</h1>
+            <p class="text-lg md:text-xl mb-6">Tailor-Made Greece Vacations Designed by Local Experts for a Truly
+                Personalized Journey</p>
+            <a href="#"
+                class="bg-orange-900 text-orange-200 px-6 py-3 rounded-lg hover:text-orange-200 hover:bg-orange-600 transition-colors carousel_btn">Start
+                Planning</a>
+        </div>
+    </section>
+    <!-- YOUR DREAM VACATION SECTION -->
+    <section class="py-16 bg-white text-center px-4">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-serif font-semibold mb-6">
+                Your Dream Greece Vacation Starts Here
+            </h2>
+            <p class="text-gray-700 leading-relaxed">
+                Discover the beauty of a journey designed just for you. Whether you’re dreaming of a romantic honeymoon,
+                a meaningful family escape, or a relaxed getaway at your own pace, we specialize in creating bespoke
+                experiences across Greece and Italy. From ancient ruins to island sunsets, our custom Greece vacation
+                packages are crafted with care, combining insider access, local charm, and effortless luxury. Explore
+                iconic destinations and hidden treasures alike—whether you’re traveling with kids, celebrating a
+                milestone, or simply seeking the best vacation spots in Greece. With our expert guidance, planning a
+                Greece vacation becomes a seamless and inspiring experience, tailored to reflect your personal style and
+                interests.
+            </p>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS SECTION -->
+    <section class="py-20 bg-white text-center px-4">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold mb-16">How it works</h2>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-start text-center">
+
+            <!-- Step 1 -->
+            <div>
+                <img src=" https://greeceinsiders.travel/wp-content/uploads/2024/03/HW_1.svg" alt="Step 1"
+                    class="mx-auto h-32 mb-4">
+                <div class="text-lg font-medium mt-4 font-serif ">You fill a simple enquiry form</div>
+                <p class="text-gray-500 text-sm mt-1">Just a few fields</p>
+            </div>
+
+            <!-- Arrow 1 -->
+            <div class="hidden md:block self-center">
+                <svg class="w-12 h-12 text-yellow-400 mx-auto" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path d="M5 12h14M13 18l6-6-6-6" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+
+            <!-- Step 2 -->
+            <div>
+                <img src="https://greeceinsiders.travel/wp-content/uploads/2024/03/HW_2.svg" alt="Step 2"
+                    class="mx-auto h-32 mb-4">
+                <div class="text-lg font-medium mt-4 font-serif ">An expert puts up a proposal</div>
+                <p class="text-gray-500 text-sm mt-1">With suggested itinerary</p>
+            </div>
+
+            <!-- Arrow 2 -->
+            <div class="hidden md:block self-center ">
+                <svg class="w-12 h-12 text-yellow-400 mx-auto" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path d="M5 12h14M13 18l6-6-6-6" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+
+            <!-- Step 3 -->
+            <div>
+                <img src="https://greeceinsiders.travel/wp-content/uploads/2024/03/HW_3.svg" alt="Step 3"
+                    class="mx-auto h-32 mb-4">
+                <div class="text-lg font-medium mt-4 font-serif ">Your trip is ready to be experienced</div>
+                <p class="text-gray-500 text-sm mt-1">Get your suitcase ready</p>
+            </div>
+
+        </div>
+        <!-- Section Title -->
+        <section class="text-center py-12  bg-orange-100 mt-14 h-7 ">
+            <h2 class="text-3xl lg:text-4xl font-serif text-gray-900 ">
+                Who Are Our Trips to Greece For?
+            </h2>
+        </section>
+
+        <!-- Carousel -->
+
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="./Screenshot 2025-07-15 221534.png" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="./Screenshot 2025-07-15 221742.png" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="./Screenshot 2025-07-15 221828.png" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="./Screenshot 2025-07-15 221900.png" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="px-6 lg:px-20 py-12 bg-white">
+        <!-- Section Title -->
+        <h2 class="text-5xl lg:text-4xl font-serif text-center text-yellow-600 mb-12 texttt ">
+            Our Unique Trips to Greece
+        </h2>
+
+        <!-- Section Block -->
+        <div class="space-y-16">
+
+            <!-- Category: Explore Greece with Kids -->
+            <div>
+                <div class="title">
+                    <h3 class="text-2xl font-serif text-gray-800 mb-2 textt">Explore Greece with Kids</h3>
+                    <p class="text-gray-600 mb-6 max-w-3xl textttt">
+                        Experience the magic of Greece with kids through immersive journeys that bring history,
+                        mythology,
+                        and nature to life. Whether you're planning a family trip to Greece or looking for curated
+                        Greece
+                        family vacation packages, we make traveling to Greece with kids seamless, fun, and
+                        unforgettable.
+                        Your perfect Greece vacation with kids starts here.
+                    </p>
+                </div>
+                <!-- Cards Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Example Card -->
+                    <div class="border rounded-lg shadow-sm hover:shadow-md transition">
+                        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMey4VrvJzXrr8a5k9I0ZQh9fllqqzwSlkHbYDhEllkhjfg4-O"
+                            alt="Trip Image" class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <span
+                                class="inline-block bg-orange-100 text-sm text-orange-500 px-2 py-1 rounded mb-2">Greece
+                                with Kids</span>
+                            <h4 class="text-md font-semibold mb-1">Cultural Heartbeat of the Mediterranean</h4>
+                            <p class="text-sm text-gray-600 mb-2">13 days from 4,000 Euros Per Person</p>
+                            <p class="text-sm text-gray-500 mb-3">Athens â€¢ Agios Nikolaos Crete â€¢ Santorini â€¢
+                                Mykonos</p>
+                            <button
+                                class="text-sm text-white bg-yellow-600 px-4 py-2 rounded hover:bg-yellow-700">Discover
+                                Trip</button>
+                        </div>
+                    </div>
+                    <div class="border rounded-lg shadow-sm hover:shadow-md transition">
+                        <img src="https://qtxasset.com/cdn-cgi/image/w=384,h=216,f=auto,fit=crop,g=0.5x0.5/https://qtxasset.com/quartz/qcloud1/media/image/greece%20beach%20corfu.jpg?VersionId=eVikFmYJe0AM9hOGQvbgC2UXCGi_fUJl"
+                            alt="Trip Image" class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <span
+                                class="inline-block bg-orange-100 text-sm text-orange-500 px-2 py-1 rounded mb-2">Greece
+                                with Kids</span>
+                            <h4 class="text-md font-serif mb-1">Semi-Self Exploration Athens and Corfu Adventure</h4>
+                            <p class="text-sm text-gray-600 mb-2">8 days from 2500 Euros Per Person</p>
+                            <p class="text-sm text-gray-500 mb-3">Athens â€¢ Corfu</p>
+                            <button
+                                class="text-sm text-white bg-yellow-600 px-4 py-2 rounded hover:bg-yellow-700">Discover
+                                Trip</button>
+                        </div>
+                    </div>
+                    <div class="border rounded-lg shadow-sm hover:shadow-md transition">
+                        <img src="https://topvoyager.com/wp-content/uploads/2018/02/22-2.jpg" alt="Trip Image"
+                            class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <span
+                                class="inline-block bg-orange-100 text-sm text-orange-500 px-2 py-1 rounded mb-2">Greece
+                                with Kids</span>
+                            <h4 class="text-md font-semibold mb-1">Classical Greece Family Tour</h4>
+                            <p class="text-sm text-gray-600 mb-2">11 days from 3500 Euros Per Person</p>
+                            <p class="text-sm text-gray-500 mb-3">Athens â€¢ Nafplio â€¢ Meteora â€¢ Delphi</p>
+                            <button
+                                class="text-sm text-white bg-yellow-600 px-4 py-2 rounded hover:bg-yellow-700">Discover
+                                Trip</button>
+                        </div>
+                    </div>
+                    <div class="border rounded-lg shadow-sm hover:shadow-md transition">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9PyoYyKyHnPoUuJ9FApCYJvoaDjFYbANUfnZ4wfswKhfBnoBS"
+                            alt="Trip Image" class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <span
+                                class="inline-block bg-orange-100 text-sm text-orange-500 px-2 py-1 rounded mb-2">Greece
+                                with Kids</span>
+                            <h4 class="text-md font-semibold mb-1">Exploring the Magical Cycladic Islands of Greece</h4>
+                            <p class="text-sm text-gray-600 mb-2">10 days from 4000 Euros Per Person</p>
+                            <p class="text-sm text-gray-500 mb-3">Athens â€¢ Paros â€¢ Naxos</p>
+                            <button
+                                class="text-sm text-white bg-yellow-600 px-4 py-2 rounded hover:bg-yellow-700">Discover
+                                Trip</button>
+                        </div>
+                    </div>
+
+                    <!-- Repeat other cards similarly -->
+                </div>
+            </div>
+
+            <!-- Category: Your Dream Honeymoon in Greece -->
+            <div class="">
+                <div class="title">
+                    <h3 class="text-2xl font-serif text-gray-800 mb-2 textt">Your Dream Honeymoon in Greece</h3>
+                    <p class="text-gray-600 mb-6 max-w-3xl textttt">
+                        Celebrate your love with a luxury honeymoon in Greece, where every moment feels tailor-made.
+                        From
+                        secluded sunsets in Santorini to charming strolls through Nafplio, our Greece honeymoon packages
+                        blend romance, culture, and indulgence. Let us craft a personalized Greece honeymoon itinerary
+                        to
+                        the most enchanting Greece honeymoon destinations.
+                    </p>
+                </div>
+                <div class="cards flex justify-around  ">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Example Card -->
+                        <div class="border rounded-lg shadow-sm hover:shadow-md transition">
+                            <img src="https://f.otzyv.ru/f/11/07/82781/1909161824400.jpg" alt="Trip Image"
+                                class="w-full h-48 object-cover rounded-t-lg">
+                            <div class="p-4">
+                                <span
+                                    class="inline-block bg-orange-100 text-sm text-orange-500 px-2 py-1 rounded mb-2">Greece
+                                    Honeymoon Package</span>
+                                <h4 class="text-md font-semibold mb-1">A Romantic Cycladic Escape</h4>
+                                <p class="text-sm text-gray-600 mb-2">11 days from 4,000 Euros Per Person</p>
+                                <p class="text-sm text-gray-500 mb-3">Naxos • Santorini</p>
+                                <button
+                                    class="text-sm text-white bg-yellow-600 px-4 py-2 rounded hover:bg-yellow-700">Discover
+                                    Trip</button>
+                            </div>
+                        </div>
+                        <div class="border rounded-lg shadow-sm hover:shadow-md transition">
+                            <img src="https://media.istockphoto.com/id/858209082/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%BA%D1%80%D0%B0%D1%81%D0%B8%D0%B2%D1%8B%D0%B9-%D0%B7%D0%B0%D0%BA%D0%B0%D1%82-%D0%B2-%D0%BE%D0%B9%D0%B5-%D1%81%D0%B0%D0%BD%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B8-%D0%B2%D0%B8%D0%B4-%D1%81-%D0%BC%D0%BE%D1%80%D1%8F-%D1%81-%D1%81%D0%B8%D0%BB%D1%83%D1%8D%D1%82%D0%BE%D0%BC-%D0%BA%D0%B0%D1%82%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%D0%BD%D0%B0.jpg?s=170667a&w=0&k=20&c=xLE1wlAGCZwpJ_RR9uboirUyCQ94BUI_cMiAcOniZSo="
+                                alt="Trip Image" class="w-full h-48 object-cover rounded-t-lg">
+                            <div class="p-4">
+                                <span
+                                    class="inline-block bg-orange-100 text-sm text-orange-500 px-2 py-1 rounded mb-2">Greece
+                                    Honeymoon Package</span>
+                                <h4 class="text-md font-semibold mb-1">A Romantic Cycladic Escape</h4>
+                                <p class="text-sm text-gray-600 mb-2">11 days from 4,000 Euros Per Person</p>
+                                <p class="text-sm text-gray-500 mb-3">Naxos • Santorini</p>
+                                <button
+                                    class="text-sm text-white bg-yellow-600 px-4 py-2 rounded hover:bg-yellow-700">Discover
+                                    Trip</button>
+                            </div>
+                        </div>
+                        <div class="border rounded-lg shadow-sm hover:shadow-md transition">
+                            <img src="https://fs.tonkosti.ru/sized/c420x200/2a/ta/2ataldql3k5c4w4c4k88kog40.jpg"
+                                alt="Trip Image" class="w-full h-48 object-cover rounded-t-lg">
+                            <div class="p-4">
+                                <span
+                                    class="inline-block bg-orange-100 text-sm text-orange-500 px-2 py-1 rounded mb-2">Greece
+                                    Honeymoon Package</span>
+                                <h4 class="text-md font-semibold mb-1">A Romantic Cycladic Escape</h4>
+                                <p class="text-sm text-gray-600 mb-2">11 days from 4,000 Euros Per Person</p>
+                                <p class="text-sm text-gray-500 mb-3">Naxos • Santorini</p>
+                                <button
+                                    class="text-sm text-white bg-yellow-600 px-4 py-2 rounded hover:bg-yellow-700">Discover
+                                    Trip</button>
+                            </div>
+                        </div>
+                        <div class="border rounded-lg shadow-sm hover:shadow-md transition">
+                            <img src="https://img.pac.ru/resorts/213097/248368/big/2DC734CFC0A8801433EC0CE6C3361ACB.jpg"
+                                alt="Trip Image" class="w-full h-48 object-cover rounded-t-lg">
+                            <div class="p-4">
+                                <span
+                                    class="inline-block bg-orange-100 text-sm text-orange-500 px-2 py-1 rounded mb-2">Greece
+                                    Honeymoon Package</span>
+                                <h4 class="text-md font-semibold mb-1">A Romantic Cycladic Escape</h4>
+                                <p class="text-sm text-gray-600 mb-2">11 days from 4,000 Euros Per Person</p>
+                                <p class="text-sm text-gray-500 mb-3">Naxos • Santorini</p>
+                                <button
+                                    class="text-sm text-white bg-yellow-600 px-4 py-2 rounded hover:bg-yellow-700">Discover
+                                    Trip</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repeat other cards similarly -->
+                </div>
+            </div>
+
+            <!-- Category: Vacations for Seniors -->
+            <div>
+                <div class="title">
+                    <h3 class="text-2xl font-serif text-gray-800 mb-2 textt ">Vacations for Seniors</h3>
+                    <p class="text-gray-600 mb-6 max-w-3xl textttt ">
+                        Discover Greece at your own pace with tailor-made trips for seniors over 60. Whether you're
+                        drawn to serene beach vacations for seniors along the Aegean, immersive learning vacations for
+                        seniors exploring ancient ruins, or gentle walking vacations for seniors through charming
+                        villages and coastal trails, our curated journeys combine comfort, culture, and calm. Every
+                        vacation for seniors is thoughtfully designed with luxury, ease, and authenticity in mind. Let
+                        us craft your ideal Greek experience.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Example Card -->
+                    <div class="border rounded-lg shadow-sm hover:shadow-md transition font-serif">
+                        <img src="https://www.discovergreece.com/sites/default/files/styles/default/public/2019-12/a_little_before_you_reach_koumaros_you_pass_exomvourgo_castle_high_up_on_a_640m_conical_hill-1.jpg"
+                            alt="Trip Image" class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <span
+                                class="inline-block bg-orange-100 text-sm text-orange-500 px-2 py-1 rounded mb-2">Greece
+                                for Seniors</span>
+                            <h4 class="text-md font-semibold mb-1">Island Hopping: Tinos, Naxos & Santorini</h4>
+                            <p class="text-sm text-gray-600 mb-2">13 days from 3,600 Euros Per Person</p>
+                            <p class="text-sm text-gray-500 mb-3">Tinos ā€¢ Naxos ā€¢ Santorini</p>
+                            <button
+                                class="text-sm text-white bg-yellow-600 px-4 py-2 rounded hover:bg-yellow-700">Discover
+                                Trip</button>
+                        </div>
+                    </div>
+                    <div class="border rounded-lg shadow-sm hover:shadow-md transition font-serif">
+                        <img src="https://images.ttm.network/ZjYsyb8rxd3KJgdtCO6FuGKTMJY=/1200x630/filters:format(jpg)/37358c550ff64a2793180cc23be6199d/the-most-instagrammable-places-in-the-world-destinations-worth-a-picture-1200-x-630.jpg"
+                            alt="Trip Image" class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <span
+                                class="inline-block bg-orange-100 text-sm text-orange-500 px-2 py-1 rounded mb-2">Greece
+                                for Seniors</span>
+                            <h4 class="text-md font-semibold mb-1">Athens, Crete, Santorini and Milos Travel Package
+                            </h4>
+                            <p class="text-sm text-gray-600 mb-2">13 days from 3800 Euros Per Person</p>
+                            <p class="text-sm text-gray-500 mb-3">Athens â€¢ Chania Crete â€¢ Heraklion Crete â€¢
+                                Santorini â€¢ Milos</p>
+                            <button
+                                class="text-sm text-white bg-yellow-600 px-4 py-2 rounded hover:bg-yellow-700">Discover
+                                Trip</button>
+                        </div>
+                    </div>
+                    <div class="border rounded-lg shadow-sm hover:shadow-md transition font-serif">
+                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvVhu9gkwNjx_ngjbxlrfHs6603FgLSOqq526gl1tZdRHP9kAQ"
+                            alt="Trip Image" class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <span
+                                class="inline-block bg-orange-100 text-sm text-orange-500 px-2 py-1 rounded mb-2 font-serif">Greece
+                                for Seniors</span>
+                            <h4 class="text-md font-semibold mb-1">Greece Food Tour: Athens and Islands</h4>
+                            <p class="text-sm text-gray-600 mb-2">8 days from 3000 Euros Per person</p>
+                            <p class="text-sm text-gray-500 mb-3">Athens â€¢ Chania Crete â€¢ Santorini</p>
+                            <button
+                                class="text-sm text-white bg-yellow-600 px-4 py-2 rounded hover:bg-yellow-700">Discover
+                                Trip</button>
+                        </div>
+                    </div>
+                    <div class="border rounded-lg shadow-sm hover:shadow-md transition  font-serif">
+                        <img src="https://stihi.ru/pics/2023/04/03/3253.jpg" alt="Trip Image"
+                            class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <span
+                                class="inline-block bg-orange-100 text-sm text-orange-500 px-2 py-1 rounded mb-2">Greece
+                                for Seniors</span>
+                            <h4 class="text-md font-semibold mb-1">A week in Greece, the Absolute Must dos</h4>
+                            <p class="text-sm text-gray-600 mb-2">8 days from 3500 Euros Per person</p>
+                            <p class="text-sm text-gray-500 mb-3">Athens â€¢ Mykonos â€¢ Santorini</p>
+                            <button
+                                class="text-sm text-white bg-yellow-600 px-4 py-2 rounded hover:bg-yellow-700">Discover
+                                Trip</button>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Repeat other cards similarly -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="flex flex-col lg:flex-row items-center px-6 lg:px-20 py-12 bg-orange-300 hero">
+        <!-- Text Section -->
+        <div class="lg:w-1/2 text-center lg:text-left">
+            <h2 class="text-4xl font-semibold font-serif text-orange-100 mb-4">
+                Explore Our Trips to Italy
+            </h2>
+            <p class="text-lg text-gray-600 mb-6 max-w-2xl mx-auto lg:mx-0 font-serif">
+                Discover the magic of Italy through a tailor-made journey that combines luxury, culture, and
+                unforgettable experiences. Our trips to Italy offerings are more than just vacations—they're invitations
+                to savor life. Picture private tastings in Tuscan vineyards, sunset gondola rides in Venice, and guided
+                explorations of Rome’s ancient wonders. Whether you're planning a romantic escape, a family adventure,
+                or a leisurely getaway for seniors, our Italy trip packages are crafted with care and creativity.
+            </p>
+            <p class="text-lg text-gray-600 mb-6 max-w-2xl mx-auto lg:mx-0 font-serif">
+                Looking to combine destinations? Our seamless Italy and Greece trip itineraries bring the best of both
+                worlds together. Let us design a journey that's uniquely yours.
+            </p>
+            <a href="#start-here"
+                class="inline-block text-lg font-semibold text-orange-400 bg-white px-6 py-3 rounded-lg shadow-md hover:bg-teal-50 transition">
+                START HERE
+            </a>
+        </div>
+
+        <!-- Image Section -->
+        <div class="lg:w-1/2 mt-8 lg:mt-0">
+            <img src="https://media.istockphoto.com/id/970204070/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%B6%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%D0%B0-%D1%81%D0%B8%D0%B4%D0%B8%D1%82-%D0%BD%D0%B0-%D0%B1%D0%B0%D0%BB%D0%BA%D0%BE%D0%BD%D0%B5-%D1%80%D0%B0%D0%BD%D0%BE-%D1%83%D1%82%D1%80%D0%BE%D0%BC.jpg?s=170667a&w=0&k=20&c=jH0lGs8lBnsTnsvWNQ8khfqXVY1tpogYEdgcJo5tHQ8="
+                alt="Explore Italy" class="w-full h-full object-cover rounded-lg shadow-lg">
+        </div>
+    </div>
+
+    <!-- POPULAR TOURS -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-5xl font-serif font-bold text-gray-800 mb-4">Popular Destinations to Read About</h2>
+            <p class="text-gray-600 mb-12">Discover Greece with our top-rated private tours</p>
+
+            <div class="grid gap-8 md:grid-cols-3">
+                <!-- Tour Card 1 -->
+                <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+                    <img src="https://live.staticflickr.com/8370/8357718990_5432e3b79e_b.jpg" alt="Athens Tour"
+                        class="w-full h-56 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold mb-2 font-serif">Kastoria: Northern Greece’s Gem</h3>
+                        <p class="text-gray-600 mb-4">As fall emphatically establishes itself all over Greece, there
+                            is one hidden gem in the north that has been patiently waiting for this very moment:
+                            Kastoria, the region's fur trade and manufacturing center is ready to warmly embrace
+                            every...</p>
+                        <a href="#" class="text-orange-200 font-medium hover:underline">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Tour Card 2 -->
+                <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+                    <img src="https://www.explore.com/img/gallery/a-quintessential-greek-getaway-without-big-crowds-awaits-at-this-often-overlooked-island/intro-1730854758.jpg"
+                        alt="Santorini Sunset" class="w-full h-56 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold mb-2 font-serif">Naxos, Queen of the Cyclades</h3>
+                        <p class="text-gray-600 mb-4">The Cyclades is a group of islands in the middle of the Aegean
+                            Sea and in the center lies a true beauty, Naxos Island. The queen of the Cyclades is a
+                            true ornament with a long cultural and gastronomic...
+                        </p>
+                        <a href="#" class="text-orange-200 font-medium hover:underline">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Tour Card 3 -->
+                <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToArYAJ-_AlHEZifPk3ShajothniLG7pDEUhiIXlZkSqpPBsGd"
+                        alt="Delphi Tour" class="w-full h-56 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold mb-2 font-serif">Vergina & Philippi: History's Wonders
+                            Await</h3>
+                        <p class="text-gray-600 mb-4">Northern Greece, a treasure trove of ancient history, invites
+                            travelers from around the world to witness its age-old secrets. Particularly, the
+                            archaeological gems of Vergina and Philippi stand as silent, yet powerful, witnesses to
+                            the glory days of Ancient...
+                        </p>
+                        <button href="#" class="text-orange-200 font-medium hover:underline">Read More →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="flex flex-col lg:flex-row items-start gap-10 p-8 lg:p-16 bg-white">
+        <!-- Text section -->
+        <div class="lg:w-1/2">
+            <h2 class="text-3xl font-serif text-orange-300 mb-6">Who we are</h2>
+            <p class="text-gray-700 mb-4">
+                We are more than travel planners—we’re passionate explorers, creative thinkers, and cultural
+                connectors.
+                The Greece Insiders team is a diverse group of professionals with a global mindset and a shared love
+                for
+                meaningful travel. While our home base is in Athens, our expertise and curiosity extend far beyond
+                Greece’s borders, shaping experiences that celebrate the richness of cultures worldwide.
+            </p>
+            <p class="text-gray-700">
+                What unites us is our belief that travel has the power to transform—not just how we see the world,
+                but
+                how we understand ourselves. We’ve lived the magic of exploring unfamiliar streets, learning from
+                local
+                voices, and creating connections that transcend geography. That same spirit fuels everything we do:
+                crafting journeys that are personal, immersive, and deeply human.
+            </p>
+        </div>
+
+        <!-- Image section -->
+        <div class="lg:w-1/2">
+            <img src="https://greeceinsiders.travel/wp-content/uploads/2024/04/DRV_8828-scaled-1001x666-resized-q82.jpg"
+                alt="Greece Insiders Team" class="rounded-lg shadow-lg w-full object-cover">
+        </div>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <!-- Why Choose Section -->
+    <section class="py-12 text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-2xl md:text-3xl font-serif mb-12">Why choose Greece Insiders</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <!-- Support -->
+                <div class="flex flex-col items-center md:items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mb-3" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 5h2M7 5h2m4 0h2m4 0h2m-5 4v4m-6 4v4m4 0v-4m-8-4v4m4-4v4" />
+                    </svg>
+                    <h3 class="font-semibold text-lg mb-2">24/7 Support</h3>
+                    <p class="text-sm">
+                        We offer <span class="font-serif">24/7 support</span> to ensure assistance whenever you need it,
+                        day or night. Our dedicated team is always here to address your concerns and provide timely
+                        solutions.
+                    </p>
+                </div>
+
+                <!-- Payments -->
+                <div class="flex flex-col items-center md:items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mb-3" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 9V7a4 4 0 00-8 0v2m-3 4h14m-6 4h2a2 2 0 002-2v-4H5v4a2 2 0 002 2h2" />
+                    </svg>
+                    <h3 class="font-serif text-lg mb-2">100% safe payments</h3>
+                    <p class="text-sm">
+                        Our payment system guarantees 100% safety, providing peace of mind for every transaction. Rest
+                        assured, your financial security is our top priority.
+                    </p>
+                </div>
+
+                <!-- Purpose -->
+                <div class="flex flex-col items-center md:items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mb-3" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12h6m2 6h2a2 2 0 002-2V6a2 2 0 00-2-2h-2m-6 0H7a2 2 0 00-2 2v10a2 2 0 002 2h2m6 0h-2m0-12h2" />
+                    </svg>
+                    <h3 class="font-serif text-lg mb-2">Travel with purpose</h3>
+                    <p class="text-sm">
+                        By traveling with us, you support small businesses, local artisans, and boutique accommodations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="bg-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-center text-2xl md:text-3xl font-serif text-gray-800 mb-10">From our travellers</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center md:text-left">
+                <!-- Testimonial 1 -->
+                <div class="border px-4 py-6 shadow-sm rounded">
+                    <div class="text-yellow-500 text-sm mb-2">★★★★★</div>
+                    <h3 class="font-semibold mb-2">Great Greek adventure</h3>
+                    <p class="text-sm text-gray-700 mb-4">
+                        Six of us just spent two weeks traveling in Greece. We went to Athens, Delphi, Meteora, Hydra,
+                        Naxos and Santorini. The trip was very well planned and everything went smoothly...
+                    </p>
+                    <a href="#" class="text-blue-600 text-sm underline">Read More</a>
+                    <div class="text-xs text-gray-500 mt-2">H5426Hjulaf</div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="border px-4 py-6 shadow-sm rounded">
+                    <div class="text-yellow-500 text-sm mb-2">★★★★★</div>
+                    <h3 class="font-semibold mb-2">Great Honeymoon in Greece</h3>
+                    <p class="text-sm text-gray-700 mb-4">
+                        Anthia and Greece Insiders helped plan our honeymoon and arranged an amazing trip to Athens,
+                        Mykonos, and Santorini. She was easy to work with and patient...
+                    </p>
+                    <a href="#" class="text-blue-600 text-sm underline">Read More</a>
+                    <div class="text-xs text-gray-500 mt-2">Bob</div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="border px-4 py-6 shadow-sm rounded">
+                    <div class="text-yellow-500 text-sm mb-2">★★★★★</div>
+                    <h3 class="font-semibold mb-2">One of our best travel experiences EVER!</h3>
+                    <p class="text-sm text-gray-700 mb-4">
+                        Going to Greece? Want a travel agent? If so, I highly recommend Greece Insiders! I planned a
+                        multigenerational family trip to Greece that included children, adults...
+                    </p>
+                    <a href="#" class="text-blue-600 text-sm underline">Read More</a>
+                    <div class="text-xs text-gray-500 mt-2">Wesley S</div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="border px-4 py-6 shadow-sm rounded">
+                    <div class="text-yellow-500 text-sm mb-2">★★★★★</div>
+                    <h3 class="font-semibold mb-2">Our trip was exactly what we wanted</h3>
+                    <p class="text-sm text-gray-700 mb-4">
+                        We worked with Eleni for the past year to plan a 2 week trip to Naxos, Santorini, and 2
+                        different locations in Crete. Everything went as planned...
+                    </p>
+                    <a href="#" class="text-blue-600 text-sm underline">Read More</a>
+                    <div class="text-xs text-gray-500 mt-2">jcrdaycare</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="py-20 bg-orange-200 text-white text-center">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-serif mb-4">Ready to Plan Your Trip to Greece?</h2>
+            <p class="mb-6 text-lg">Let our local experts create your perfect itinerary.</p>
+            <a href="#"
+                class="inline-block bg-white text-orange-200 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition">
+                Start Planning Now
+            </a>
+        </div>
+    </section>
+    <!-- AS SEEN IN SECTION -->
+    <section class="py-16 bg-white text-center">
+        <h2 class="text-2xl md:text-3xl font-serif font-semibold mb-10">As seen in</h2>
+        <div class="flex justify-center items-center gap-8 flex-wrap max-w-6xl mx-auto px-4">
+            <img src="https://s3-eu-west-1.amazonaws.com/tpd/logos/46cf24f500006400050095e8/0x0.png" alt="The Telegraph"
+                class="h-8 grayscale">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/BBC_Logo_2021.svg" alt="BBC Travel"
+                class="h-8 grayscale">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Cond%C3%A9_Nast_logo.svg/1024px-Cond%C3%A9_Nast_logo.svg.png"
+                alt="Conde Nast" class="h-8 grayscale">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/The_New_York_Times_logo.png" alt="NY Times"
+                class="h-8 grayscale">
+            <img src="https://static.cdnlogo.com/logos/f/42/forbes.png" alt=" Forbes" class="h-12 grayscale">
+        </div>
+    </section>
+
+    <!-- FROM OUR BLOG SECTION -->
+    <section class="bg-[#f8f6f2] py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-serif font-semibold text-center mb-10">From our blog</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 overflow-x-auto">
+
+                <!-- Blog card template -->
+                <div class="bg-white shadow-sm hover:shadow-md transition rounded">
+                    <img src="https://www.ediva.gr/wp-content/uploads/2021/06/skiathos.jpg" alt="Blog 1"
+                        class="w-full h-48 object-cover rounded-t">
+                    <div class="p-4">
+                        <p class="text-sm text-gray-500 mb-1">Greek Islands</p>
+                        <h3 class="text-base font-medium mb-3">Experience the Skiathos Nightlife Scene</h3>
+                        <a href="#" class="text-sm font-semibold text-black border-b-2 border-yellow-400">READ
+                            MORE</a>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-sm hover:shadow-md transition rounded">
+                    <img src="https://cdn.getyourguide.com/img/tour/ce27bf270dce54d46b924119fba0242078e2bc5e06dc7531a204fa28a6f2d649.jpg/148.jpg"
+                        alt="Blog 2" class="w-full h-48 object-cover rounded-t">
+                    <div class="p-4">
+                        <p class="text-sm text-gray-500 mb-1">Italy, Italy Travel Guides</p>
+                        <h3 class="text-base font-medium mb-3">How to Experience the Best of Positano, Italy</h3>
+                        <a href="#" class="text-sm font-semibold text-black border-b-2 border-yellow-400">READ
+                            MORE</a>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-sm hover:shadow-md transition rounded">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3ptSJizDDjarMK-yr3tix7LtgSq4kBgAim6Xo21QVMMNKY7S6"
+                        alt="Blog 3" class="w-full h-48 object-cover rounded-t">
+                    <div class="p-4">
+                        <p class="text-sm text-gray-500 mb-1">Italy</p>
+                        <h3 class="text-base font-medium mb-3">Exploring Venice and Its Canals</h3>
+                        <a href="#" class="text-sm font-semibold text-black border-b-2 border-yellow-400">READ
+                            MORE</a>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-sm hover:shadow-md transition rounded">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5WxSL6N4MdLAqrMidgfsZHuHZNuoR42NIuz2d8R3nMfeRR8tb"
+                        alt="Blog 4" class="w-full h-48 object-cover rounded-t">
+                    <div class="p-4">
+                        <p class="text-sm text-gray-500 mb-1">Crete, Senior Travel</p>
+                        <h3 class="text-base font-medium mb-3">Crete for Seniors: A Complete Guide</h3>
+                        <a href="#" class="text-sm font-semibold text-black border-b-2 border-yellow-400">READ
+                            MORE</a>
+                    </div>
+                </div>
+
+                <!-- Shu tarzda qolganlarini ham qo‘shishingiz mumkin -->
+
+            </div>
+        </div>
+    </section>
+    <section class="bg-orange-200 py-10">
+        <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
+            <!-- Matn -->
+            <h2 class="text-lg md:text-xl text-center md:text-left font-serif text-black">
+                Sign up for special offers and promotions
+            </h2>
+
+            <!-- Forma -->
+            <form class="flex items-center gap-2 border-b border-black pb-1">
+                <input type="email" placeholder="Your email"
+                    class="bg-transparent placeholder-black text-black focus:outline-none text-sm px-2" />
+                <button type="submit"
+                    class="text-black text-sm font-semibold  border-white hover:border-black transition-all">
+                    SUBSCRIBE
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="w-full mx-auto px-4 grid md:grid-cols-4 gap-8">
+            <!-- Logo + Description -->
+            <div>
+                <h3 class="text-xl font-bold bg-white text-white mb-4"><img src="./image-removebg-preview.png" alt="">
+                </h3>
+                <p>Your local experts for tailor-made experiences in Greece.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class=" hover:text-orange-200 transition ">Home</a></li>
+                    <li><a href="#" class=" hover:text-orange-200 transition ">Tours</a></li>
+                    <li><a href="#" class=" hover:text-orange-200 transition ">About Us</a></li>
+                    <li><a href="#" class=" hover:text-orange-200 transition ">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4">Contact</h4>
+                <ul class="space-y-2">
+                    <li class="hover:text-orange-200">Email: info@greeceinsiders.com</li>
+                    <li class="hover:text-orange-200">Phone: +30 210 000 0000</li>
+                    <li class="hover:text-orange-200">Address: Athens, Greece</li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-orange-200">Facebook</a>
+                    <a href="#" class="hover:text-orange-200">Instagram</a>
+                    <a href="#" class="hover:text-orange-200">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8 text-center text-sm text-gray-500">
+            © 2025 Greece Insiders. All rights reserved.
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="main.js"></script>
+    <script src="./tailwind.config.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+.cards {
+    gap: 50px;
+}
+
+body {
+    background-color: rgb(226, 226, 193);
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loho{
+    margin-left: -100px;
+}
+
+.textt {
+    font-size: 45px;
+    padding-bottom: 20px;
+}
+
+.textttt {
+    text-align: center;
+}
+
+.carousel_btn {
+    transition: 1s;
+}
+
+.texttt {
+    color: rgb(212, 175, 55);
+    font-size: 70px;
+    margin-bottom: 105px;
+}
